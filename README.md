@@ -1,11 +1,4 @@
-# How to Capture the Patterns of Price and Volume data in Long Time Series
-
-## Team Member
-
-| Student Name | Student ID |
-| ------------ | ---------- |
-| Li Chang     | 2301212340 |
-| Cheng Lei    | 2301212317 |
+#  Capturing the Patterns of Price and Volume data in Long Time Series
 
 ## Project Introduction
 

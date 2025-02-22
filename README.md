@@ -68,8 +68,8 @@ Click the model name to see the code of the model.
 
 | model name                                                   | detailed structure                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|| GRU: Input dimension 40 × 6, output dimension 30, with 1 layer.<br/>BN: Batch standardize the output of GRU.<br/>FC: Fully connected layer, input dimension 30, output dimension 1. |
-|| GRU Path : Input dimension 8 × 5, output dimension 30, 1 layer, quantity 6.<br/>Concat: concatenate the outputs of GRU, with an output dimension of 180.<br/>BN: Batch standardize the output of Concat.<br/>FC: Fully connected layer, input dimension 180, output dimension 1. |
+|GRU | GRU: Input dimension 40 × 6, output dimension 30, with 1 layer.<br/>BN: Batch standardize the output of GRU.<br/>FC: Fully connected layer, input dimension 30, output dimension 1. |
+|GRU Patch| GRU  : Input dimension 8 × 5, output dimension 30, 1 layer, quantity 6.<br/>Concat: concatenate the outputs of GRU, with an output dimension of 180.<br/>BN: Batch standardize the output of Concat.<br/>FC: Fully connected layer, input dimension 180, output dimension 1. |
 
 ### 3. Training detail
 

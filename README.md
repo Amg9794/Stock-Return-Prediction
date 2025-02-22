@@ -34,7 +34,7 @@ In this study, the long-term stock series volume and price data are divided into
 
 ![raw data sample](image/datasample.png)
 
-the raw data is too big, so we don't put it into the repository, click the [link](https://disk.pku.edu.cn/link/AA2715E37E09614D25A07092DE39E4A33A) here to get the raw data if you want to reproduce the program. 
+the raw data is too big, so we don't put it into the repository.
 
 ### 2. Data processing
 
@@ -68,8 +68,8 @@ Click the model name to see the code of the model.
 
 | model name                                                   | detailed structure                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [GRU baseline](https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/model/gru_base.py) | GRU: Input dimension 40 × 6, output dimension 30, with 1 layer.<br/>BN: Batch standardize the output of GRU.<br/>FC: Fully connected layer, input dimension 30, output dimension 1. |
-| [GRU patch](https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/model/gru_patch.py) | GRU: Input dimension 8 × 5, output dimension 30, 1 layer, quantity 6.<br/>Concat: concatenate the outputs of GRU, with an output dimension of 180.<br/>BN: Batch standardize the output of Concat.<br/>FC: Fully connected layer, input dimension 180, output dimension 1. |
+|| GRU: Input dimension 40 × 6, output dimension 30, with 1 layer.<br/>BN: Batch standardize the output of GRU.<br/>FC: Fully connected layer, input dimension 30, output dimension 1. |
+|| GRU Path : Input dimension 8 × 5, output dimension 30, 1 layer, quantity 6.<br/>Concat: concatenate the outputs of GRU, with an output dimension of 180.<br/>BN: Batch standardize the output of Concat.<br/>FC: Fully connected layer, input dimension 180, output dimension 1. |
 
 ### 3. Training detail
 
@@ -163,10 +163,9 @@ The data of Shanghai and Shenzhen A-shares from March 29, 2023 to April 10, 2024
 
 ## File Structure of Our Project
 
-- [backtest](https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/backtest): the folder we do the backtest. 
-- [code](https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/code): the folder including the model trainer and some functions used in the model training. 
-- [data](https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/data):  the raw and processed data, including a sample factor data as the result after we running the model. 
-- [image](https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/image): images shown in this file. 
-- [model](https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/model): two model we used. 
-- [data_preprocess.ipynb](https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/data_preprocess.ipynb): code we do the data preprocessing.
-- [model_train.ipynb](https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/model_train.ipynb): code we do the model training and predicting. 
+- [backtest]([https://github.com/lca-123/PHBS_MLF_2023/tree/master/final_project/backtest](https://github.com/Amg9794/Stock-Return-Prediction/tree/main/backtest_data)): the folder we do the backtest. 
+- [code](https://github.com/Amg9794/Stock-Return-Prediction/tree/main/code): the folder including the model trainer and some functions used in the model training. 
+- [image](https://github.com/Amg9794/Stock-Return-Prediction/tree/main/image): images shown in this file. 
+- [model](https://github.com/Amg9794/Stock-Return-Prediction/tree/main/model): two model we used. 
+- [data_preprocess.ipynb](https://github.com/Amg9794/Stock-Return-Prediction/blob/main/data_preprocess.ipynb): code we do the data preprocessing.
+- [model_train.ipynb](https://github.com/Amg9794/Stock-Return-Prediction/blob/main/model_train.ipynb): code we do the model training and predicting. 
